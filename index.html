@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>카운터 버튼</title>
+  <style>
+    body { display:flex; height:100vh; justify-content:center; align-items:center; }
+    button { font-size:2rem; padding:1rem 2rem; }
+    #count { font-size:2rem; margin-left:1rem; }
+  </style>
+</head>
+<body>
+  <button onclick="increase()">눌러보세요</button>
+  <span id="count">0</span>
+
+  <script>
+    let num = 0;
+    function increase() {
+      num++;
+      document.getElementById("count").innerText = num;
+    }
+  </script>
+</body>
+</html>
